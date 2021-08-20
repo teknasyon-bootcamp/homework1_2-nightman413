@@ -43,6 +43,8 @@ if($gender == "male"){
         echo "Tahmininiz BMR değerinizden düşük";
     }elseif($guess > $bmr){
         echo "Tahmininiz BMR değerinizden yüksek";
+    }else{
+        echo "Tahmininiz BMR değeriniz ile aynı";
     }
 }elseif($gender == "female"){
     $bmr = 447.593 + (9.247 * $weight) + (3.098 * $height) - (4.330 * $age);
@@ -51,5 +53,7 @@ if($gender == "male"){
         echo "Tahmininiz BMR değerinizden düşük";
     }elseif($guess > $bmr){
         echo "Tahmininiz BMR değerinizden yüksek";
+    }else{
+        echo "Tahmininiz BMR değeriniz ile aynı";
     }
 }
